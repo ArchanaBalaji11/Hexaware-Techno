@@ -1,0 +1,182 @@
+/* Scoped to the create-assessment page */
+.create-assessment-page .create-assessment-container {
+  background-color: #f9f9f9;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+}
+
+.create-assessment-page .header {
+  background-color: #520a89; /* Primary color */
+  padding: 20px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.create-assessment-page .header-title {
+  margin: 0; /* Reset margin for proper alignment */
+}
+
+.create-assessment-page .logo {
+  flex: 0 0 50px;
+  position: relative;
+  top:-60px
+}
+
+.create-assessment-page .logo img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.create-assessment-page .error-message {
+  color: red;
+  margin-bottom: 15px;
+}
+
+.create-assessment-page form {
+  display: flex;
+  flex-direction: column;
+}
+
+.create-assessment-page form label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.create-assessment-page form input,
+.create-assessment-page form select,
+.create-assessment-page form textarea {
+  margin-bottom: 15px;
+  padding: 12px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  transition: border-color 0.3s;
+}
+
+.create-assessment-page form input:focus,
+.create-assessment-page form select:focus,
+.create-assessment-page form textarea:focus {
+  border-color: #520a89;
+  outline: none;
+}
+
+.create-assessment-page form button {
+  background-color: #520a89;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.create-assessment-page form button:hover {
+  background-color: #3f0869;
+}
+
+.create-assessment-page .questions-list {
+  margin-bottom: 15px;
+  border: 1px dashed #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  min-height: 40px;
+}
+
+.create-assessment-page .add-question-button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.create-assessment-page .add-question-button:hover {
+  background-color: #45a049;
+}
+
+.create-assessment-page .draft-option {
+  margin: 15px 0;
+}
+
+.create-assessment-page  
+.back-button {
+  cursor: pointer;
+  color: white;
+  font-size: 18px;
+  background-color: #520a89;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s;
+}
+
+.create-assessment-page .back-button:hover {
+  background-color: #ac65e3;
+}
+
+
+/* Tooltip styles */
+.create-assessment-page .tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.create-assessment-page .tooltip .tooltiptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%; /* Position above the text */
+  left: 50%;
+  margin-left: -80px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.create-assessment-page .tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Suggestions styles */
+.create-assessment-page .suggestions-list {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: -5px;
+  max-height: 150px;
+  overflow-y: auto;
+  background-color: white;
+  position: relative;
+  z-index: 1;
+}
+
+.create-assessment-page .suggestions-list li {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.create-assessment-page .suggestions-list li:hover {
+  background-color: #f0f0f0;
+}

@@ -1,0 +1,120 @@
+/* Container */
+.proctoring-setup-container {
+    padding: 20px;
+    background-color: #f9f9f9;
+    font-family: Arial, sans-serif;
+    margin: 0 auto;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Header */
+  .header {
+    background-color: #520a89;
+    align-items: center;
+    padding: 10px;
+    color: white;
+  }
+  
+  .logo img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 15px;
+    top: 20px;
+  }
+  
+  .title {
+    flex: 1;
+    text-align: center;
+    font-size: 24px;
+  }
+  
+  /* Proctoring Settings Section */
+  .config-section {
+    margin-top: 20px;
+  }
+  
+  .config-options {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .option {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    align-items: center;
+  }
+  
+  .option-icon {
+    display: flex;
+    align-items: center;
+  }
+  
+  .option-icon label {
+    margin-left: 10px;
+    font-size: 18px;
+  }
+  
+  .icon {
+    font-size: 24px;
+    color: #520a89;
+  }
+  
+  .option-status {
+    display: flex;
+    align-items: center;
+  }
+  
+  .option-status span {
+    margin-left: 10px;
+  }
+  
+  /* Test Environment Setup */
+  .setup-guide,
+  .proctoring-rules,
+  .additional-features {
+    margin-top: 20px;
+  }
+  
+  .setup-check-button {
+    background-color: #520a89;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .setup-check-button:hover {
+    background-color: #3d076d;
+  }
+  
+  /* Proctoring Rules & Additional Features */
+  .proctoring-rules ul,
+  .additional-features ul {
+    list-style-type: disc;
+    margin-left: 20px;
+  }
+  
+  /* Back Button */
+  .back-button {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background-color: #520a89;
+    color: white;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    text-decoration: none;
+  }
+  
+  .back-button:hover {
+    background-color: #ac65e3;
+  }
+  

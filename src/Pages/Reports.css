@@ -1,0 +1,192 @@
+.reports-container {
+  font-family: 'Arial', sans-serif;
+  padding: 20px;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.reports-container .header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #520a89;
+  padding: 20px;
+  color: #fff;
+  border-radius: 10px 10px 0 0;
+  margin-bottom: 30px; /* Added margin to create space between header and overview section */
+}
+
+.reports-container .logo {
+  flex:0 0 50px;
+  left:20%;
+}
+
+.logo img {
+  width: 60px; 
+  height: 60px;
+  border-radius: 50%;
+  position: absolute;
+  left: 20px; /* leftmost corner */
+  margin:10px;
+  top: 35px; 
+}
+
+
+.header-title {
+  flex-grow: 1;
+  text-align: center;
+  margin-left: 10px;
+}
+
+.overview-section {
+  margin-bottom: 50px;
+  padding: 10px 0; /* Added padding to give more space between header and section */
+}
+
+.performance-summary {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px; 
+}
+
+.summary-card {
+  flex:1;
+    background-color: #520a89; /* Updated background color */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    transition: transform 0.2s ease, box-shadow 0.1s ease;
+    cursor: pointer;
+    color: #fff; /* Ensure text color is visible */
+  }
+  
+  .summary-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .summary-card h2 {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    color: #fff; /* Ensure header text color is visible */
+  }
+
+.report-section {
+  margin-bottom: 50px;
+}
+
+.chart-container {
+  height: 300px;
+  margin-bottom: 30px;
+}
+
+.performance-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 30px 0;
+}
+
+.performance-table th,
+.performance-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+.performance-table th {
+  background-color: #520a89;
+  color: white;
+}
+
+.export-section {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.export-section button {
+  background-color: #520a89;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.export-section button:hover {
+  background-color: #6a0fba;
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  z-index: 1000;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal-header h2 {
+  margin: 0;
+}
+
+.modal-content {
+  margin-top: 20px;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+
+.close-button {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  font-size: 24px;
+}
+
+.export-section button:hover {
+  background-color: #6a0fba;
+}
+
+.back-button {
+  cursor: pointer;
+  color: white;
+  font-size: 18px;
+  background-color: #520a89;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s;
+}
+
+.back-button:hover {
+  background-color: #ac65e3;
+}
